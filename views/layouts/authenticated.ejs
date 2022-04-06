@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Passport OAuth</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.14.1/contents.min.css" integrity="sha512-HK3G0WJTxeYhsh/hzS/1NDmqw1uZplDy2w2Z60xHPTytEKEpSSXF9DsXytkUNLh7AyPeBvyVSpz4+kRCxTDYqQ==" crossorigin="anonymous" />
+</head>
+<body style="background: #d3d3d34a; height: 100vh;">
+    <%- include('../partials/navbar') %>
+    
+    <%- body %>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.14.1/ckeditor.js" integrity="sha512-P4rrEImABBYtBFdmrFPqF8rjh8iiRiupfQ4KLrBCL8dAivLiM2nh+1bJQeMb2ZglmIlGZdfTtgGdXH6H/hGVeg==" crossorigin="anonymous"></script>
+    <script>
+        CKEDITOR.replace('body')
+
+        if(document.querySelector('.notification')) {
+            const notification = document.querySelector('.notification')
+            const notificationCloseBtn = document.querySelector('.notification').querySelector('.delete')
+    
+            notificationCloseBtn.addEventListener('click', function (e) {
+                notification.remove()
+            })
+        }
+    </script>
+</body>
+</html>

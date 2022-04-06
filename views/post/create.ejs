@@ -1,0 +1,56 @@
+<section class="section">
+    <div class="container">
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">
+                  New Post
+                </p>
+            </header>
+
+            <form method="POST" action="/posts">
+                <div class="card-content">
+                    <p class="mb-3">Hi, tell us what in your mind..</p>
+                    
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" name="title" type="text" placeholder="Your Post Title">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-heading"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <textarea name="body"></textarea>
+                        <!-- <p class="control has-icons-left">
+                            <input class="input" name="body" type="text" placeholder="Your Post Body">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-comment-alt"></i>
+                            </span>
+                        </p> -->
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-left">
+                          <div class="select is-fullwidth">
+                            <select name="status">
+                              <option selected>public</option>
+                              <option>private</option>
+                            </select>
+                          </div>
+                          <div class="icon is-small is-left">
+                            <i class="far fa-eye"></i>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <footer class="card-footer">
+                    <button type="submit" class="button is-link is-fullwidth">
+                        <span>Post</span>
+                        <span class="icon">
+                            <i class="far fa-paper-plane"></i>
+                        </span>
+                    </button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</section>

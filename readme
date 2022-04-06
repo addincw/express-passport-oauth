@@ -1,0 +1,13 @@
+proses mirip dengan passport local, bedanya harus setting oauth dulu di provider masing" (google, github, twitter, dll)
+1. login dengan google memerlukan credetial dari google, jadi tahapannya
+    - masuk https://console.cloud.google.com/
+    - buat project
+    - aktifkan api dan layanan, pilih google + (enable)
+    - pilih api layanan, create credential untuk oauth 2.0
+
+membutuhkan library express-session, connect flash untuk handle session
+
+library connect-mongo untuk menyimpan session pada db
+
+source: 
+Node.js App From Scratch | Express, MongoDB & Google OAuth : https://www.youtube.com/watch?v=SBvmnHTQIPY&list=PLYjQ_F91Hq2U7WpmJb0L61YiwX0l4n2dh&index=5&t=2155s
